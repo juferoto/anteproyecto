@@ -1,0 +1,143 @@
+
+%% Formato para la presentaci\'on de  proyectos de grado. 
+%% Maestría en Ingeniería de Software
+%% Pontificia Universidad Javeriana
+%% Elaborado por Angela Villota y Luisa Rincón
+%% Inspirado en Formato elaborado para carrera de Ing de Sistemas
+%% V 1.0 Abril - 2022
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{cite}
+\usepackage{titling}
+\usepackage{setspace}
+\usepackage{graphicx}
+\graphicspath{{img/}} %ruta de la carpeta en donde estaràn las imágenes
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{natbib} %% para citaciones
+\usepackage[format=hang,font=small,labelfont=bf]{caption}
+
+% *** ALIGNMENT PACKAGES ***
+%
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{dblfloatfix}
+\usepackage{subfig}
+
+\onehalfspacing
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{2}
+
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+
+\begin{document}
+%crear titulo
+%\maketitle
+
+%%%%%%%%%%%%%%%%%
+% Portada del Anteproyecto
+%%%%%%%%%%%%%%%%%
+\input{src/00-titulo}
+\newpage
+%%%%%%%%%%%%%%%%%
+% Ficha resumen
+%%%%%%%%%%%%%%%%%
+%\input{src/00-resumen}
+%\newpage
+
+%%%%%%%%%%%%%%%%%
+% Indices y tablas
+%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+\newpage
+
+%%%%%%%%%%%%%%%%%
+% Resumen / abstract
+%%%%%%%%%%%%%%%%%
+%\input{src/0-abstract} 
+%\newpage
+
+%%%%%%%%%%%%%%%%%
+% Introduccion
+%%%%%%%%%%%%%%%%%
+%\input{src/0-introduccion} 
+%\newpage
+
+%% Problema
+\input{src/1-problema}
+\newpage
+
+%% Objetivos
+\input{src/2-objetivos}
+\newpage
+
+%% Alcance
+%\input{src/3-alcance}
+%\newpage
+
+%% Justificacion
+%\input{src/4-justificacion}
+%\newpage
+
+%% Marco conceptual
+%\input{src/5-marco}
+%\newpage
+
+%% Metodología
+%\input{src/6-metodologia}
+%\newpage
+
+%% Recursos
+%\input{src/7-recursos}
+%\newpage
+
+%% Cronograma
+%\input{src/8-cronograma}
+%\newpage
+
+\section{Referencias Bibliográficas}
+%Se deben presentar de forma rigurosa y completa las referencias bibliográficas utilizadas en el documento (No incluir bibliografía no referenciada en el documento). Se debe seguir una sola norma de referenciación en todo el documento, ej. IEEE, Harvard o APA.
+
+%Utilizar en lo posible bibliografía reciente de fuentes confiables y en inglés(libros, artículos científicos, etc.). Evitar utilizar fuentes no confiables como blogs, Wikipedia, o documentos sin autor.
+%\bibliographystyle{IEEEtran}
+\bibliographystyle{apalike}
+\bibliography{bibfile}
+\newpage
+
+%\section{Glosario de Términos}
+%Esta sección presenta un conjunto de definiciones cortas de términos que se usan en el documento del proyecto.  A continuación se presenta un extracto de un glosario de términos tomado de la tesis de ...
+
+% \begin{description}
+% \item[Accuracy] Métrica del porcentaje de clasificaciones correctas de un modelo de
+% aprendizaje supervisado.
+% \item[Bootstrap] En el contexto del aprendizaje de conjuntos de hipótesis,
+% es el uso de un subconjunto aleatorio de atributos y datos de entrenamiento obtenido
+% a partir de los datos originales, con esto se espera reducir la posibilidad de
+% \emph{overfitting}.
+% \item[Corpus] Un corpus lingüistico es un conjunto amplio de ejemplos reales del uso de un
+% lenguaje.
+
+% \end{description}
+
+
+
+
+
+\end{document}
